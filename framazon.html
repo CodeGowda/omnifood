@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Framazon</title>
+       <style>
+           body {
+               margin: 0;
+               padding: 0;
+           }
+} 
+.wrapper{
+    width:96%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 2%;
+
+}
+header{
+    background-color: #0f0d0d;
+    padding:10px 0;
+}
+.logo{
+    margin:0;
+    float:left;
+    width:30%;
+    height:30%;
+}
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header nav{
+    float:right;
+}
+
+header nav li{
+    list-style-type:none;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+header nav li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:15px;
+    text-transform: uppercase;
+}
+           #dummy-text-box {
+               visibility: hidden;
+           }
+           .navbar {
+               margin-right: 20px;
+           }
+           #real-text-box {
+               width: 30%;
+               align-self: center;
+               position: relative;
+               height: 20%;
+               border-radius: 200px;
+               margin-right: 0;
+               height: 40px;
+           }
+           .search-button {
+               background: yellow;
+           }
+           #main-banner img{
+                width:100%;
+}
+            #slider{
+                overflow: hidden;
+            }
+            #slides{
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 18s slidy infinite; 
+            }
+            #slides img {
+                width:20%;
+                float:left;
+                height: 400px;
+            }
+            /* Animation */ 
+            @keyframes slidy {
+            0% { left: 0%; }
+            28% { left: 0%; }
+            33% { left: -100%; }
+            61% { left: -100%; }
+            66% { left: -200%; }
+            94% { left: -200%; }
+            100% { left: 0%; }
+            }
+           
+        </style>
+        <body>
+            <div class="wrapper">
+               <header>
+                <div class="logo"><img src="Screenshot%202020-12-06%20at%2011.53.39%20AM.png"></div>
+                <form>
+                </form>
+                <input type="text" id="dummy-text-box">
+                <input type="text" id="real-text-box">
+                <button class="search-button">🕵♀️</button>
+                <nav>
+                    <div class="menu"></div>
+                    <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul> 
+                </nav>
+                </header>
+                <div id="main-banner">
+                    <div id="slider">
+                        <div id="slides">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/vivo/December/GW/Y30/Bank/D19383832_WL_Vivo_BAU_Dec2020_DesktopTallHero_1500x600_2._CB413222798_.jpg" alt="Vivo Phone">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/AugustShopping_Week_1500x600._CB406224931_.jpg">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/VG-2019Dec/Media-Vgsw/Amazon_Book_Bazaar_Dec_edition_Herotator_1500x600._CB413357425_.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>
